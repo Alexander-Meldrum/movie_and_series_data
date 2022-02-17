@@ -1,5 +1,5 @@
 # movie_and_series_data
-Analyze movie and series data from the database:
+Analyze movie data from the database:
 https://www.kaggle.com/tmdb/tmdb-movie-metadata
 
 Skill Keywords: Machine Learning(Linear Regression, dummy variables, feature scaling, training/testing), Python(scikit-learn, Jupyter, Pandas, Matplotlib/Seaborn, Numpy), Data Cleaning, Exploratory data analysis
