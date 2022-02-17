@@ -23,6 +23,7 @@ Data was split with a 80-20% split between training and test.
 
 # Exploratory data analysis
 ![Screenshot](Post-clean_vote_average_distribution.png)
+![Screenshot](release_month_distribution.png)
 ![Screenshot](release_year_distribution.png)
 ![Screenshot](title_char_length_distribution.png)
 ![Screenshot](profit_percent_distribution.png)
@@ -32,6 +33,7 @@ The R-squared of the model was low, showing the model is not yet mature enough: 
 0.3127<br>
 ![Screenshot](linear_regression_training_result.png)
 ![Screenshot](linear_regression_test_result.png)
+<br>
 The resulting scaled weights can infer what makes a movie score a higher 'vote_average'. <br>
 Personal note: It might be difficult to predict a very subjective movie score ('vote_average')
 
@@ -47,7 +49,6 @@ The weights show these relationships between target and inputs<br>
 Q1. 'vote_count', followed by 'runtime' had the strongest weight on the target 'vote_average' (0-10 rating of movie).<br>
 Q2. September month seems to historically had the highest score 'vote_average' (0-10 rating of movie).<br>
 Q3. September month was also the most common month for movies to be released.<br>
-![Screenshot](release_month_distribution.png)
 
 # Future possible work:
 1. Inflation adjust 'budget' and 'revenue' and use as input.
