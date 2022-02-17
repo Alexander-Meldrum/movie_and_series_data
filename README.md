@@ -2,7 +2,7 @@
 Analyze movie and series data from the database:
 https://www.kaggle.com/tmdb/tmdb-movie-metadata
 
-Skill Keywords: Python(Jupyter, Pandas, Matplotlib/Seaborn, Numpy), Data Cleaning, Exploratory data analysis
+Skill Keywords: Machine Learning(Linear Regression, dummy variables, feature scaling, training/testing), Python(scikit-learn, Jupyter, Pandas, Matplotlib/Seaborn, Numpy), Data Cleaning, Exploratory data analysis
 
 # Questions asked
 Q1. What independent variable data are estimators in regression analysis for dependent variable 'vote_average' (0-10 rating of movie)<br>
