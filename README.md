@@ -10,7 +10,7 @@ Q2. Is there a connection between movie release month (Can be extracted from 're
 Q3. When is the most common release month for movies?<br>
 
 # Work
-See "regression_analysis.ipynb"
+See "regression_analysis.ipynb"<br>
 Linear regression for target 'vote_average' (Movie score 0-10) was performed with these input variables (features):<br>
 'popularity', 'runtime', 'vote_count', 'profit_percent', 'title_char_length', 'release_year', 'release_month_x'(11 month variables)
 
@@ -19,7 +19,7 @@ The below columns had to be wrangled out from original database:<br>
 
 'profit_percent' was chosen over 'budget' or 'revenue' since it is not affected by inflation.
 
-Data was split with a 80-20% split between training and test.
+Data was split with a 80-20% between training and test.
 
 # Exploratory data analysis
 ![Screenshot](Post-clean_vote_average_distribution.png)
@@ -37,7 +37,26 @@ The R-squared of the model was low, showing the model is not yet mature enough: 
 The resulting scaled weights can infer what makes a movie score a higher 'vote_average'. <br>
 Personal note: It might be difficult to predict a very subjective movie score ('vote_average')
 
-Resulting scaled weights:<br>
+# Resulting scaled weights:<br>
+**Features	            Weights**<br>
+popularity   	        0.04<br>
+runtime	                0.22<br>
+vote_count	            0.25<br>
+profit_percent	        0.11<br>
+title_char_length	    -0.04<br>
+release_year	        -0.15<br>
+release_month_2	        0.02<br>
+release_month_3	        0.01<br>
+release_month_4	        0.01<br>
+release_month_5	        0.03<br>
+release_month_6	        0.01<br>
+release_month_7	        0.00<br>
+release_month_8	        -0.01<br>
+release_month_9	        0.10<br>
+release_month_10	    0.07<br>
+release_month_11	    0.04<br>
+release_month_12	    0.05<br>
+
 The weights show these relationships between target and inputs<br>
 'runtime':        Longer movies = higher vote_average<br>
 'vote_count':     More votes = higher vote_average<br>
